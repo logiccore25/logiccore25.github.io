@@ -1,14 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello world project</title>
-  </head>
-
-  <body>
-    <div id="root"></div>
-
-    <script type="module" src="/client/App.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Starter - React Application</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 2rem;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        .status {
+            background: #f0f9ff;
+            border: 1px solid #0ea5e9;
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .status h3 {
+            color: #0369a1;
+            margin: 0 0 0.5rem 0;
+        }
+        .status p {
+            color: #0c4a6e;
+            margin: 0;
+        }
+        .links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .link {
+            background: #667eea;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .link:hover {
+            background: #5a67d8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Fusion Starter</h1>
+        <p>A production-ready full-stack React application template with integrated Express server, featuring React Router 6 SPA mode, TypeScript, Vitest, Zod and modern tooling.</p>
+        
+        <div class="status">
+            <h3>📦 Deployment Status</h3>
+            <p>Your React application is being deployed to GitHub Pages. The full application with all features will be available once the build process completes.</p>
+        </div>
+        
+        <div class="links">
+            <a href="https://github.com/logccore25/logccore25.github.io" class="link">View Repository</a>
+            <a href="https://github.com/logccore25" class="link">GitHub Profile</a>
+        </div>
+        
+        <p><small>Built with ❤️ using Fusion Starter template</small></p>
+    </div>
+</body>
 </html>
